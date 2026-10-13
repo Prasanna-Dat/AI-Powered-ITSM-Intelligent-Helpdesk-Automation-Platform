@@ -1,0 +1,19 @@
+# --- Web API ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+python-dotenv==1.0.1
+httpx==0.28.1
+# --- Database (MongoDB Atlas) ---
+pymongo==4.10.1
+dnspython==2.7.0          # needed for mongodb+srv:// Atlas connection strings
+mongomock==4.3.0          # in-memory fallback so the app runs before Atlas is set up
+# --- AI / RAG ---
+numpy
+qdrant-client>=1.10       # vector database (Qdrant, free, runs locally)
+sentence-transformers     # open-source embedding model
+transformers              # Hugging Face LLM
+torch                     # runtime for the two libraries above
+accelerate
+# --- Testing ---
+pytest
